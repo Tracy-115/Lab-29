@@ -1,1 +1,10 @@
+Project Overview:
+In my project, I would like to assign random tasks to employees at the start of their shift. This will show the changes of the workload and these are going to change overtime. The goal is so that in my workplace, there won't be multiple employees handling tasks, and I want to make sure that no one is slacking off, and they know what to do during work hours. 
 
+Implementation:
+I plan to use std::map to store employee information and their tasks. There will be two parts to this, a key, which will have names, and a value where I will be using std::array and std::lists containing tasks. 
+
+For this, there will be three components to this. This is for when task is assigned, then over time, it will be updated to progress and completed.  
+
+Simulated events:
+At the start of the shift, the employees will be assigned, and over time, they will be moved to in progress. For each task, they will be given 25 mins (time periods) and each minute, they will be updated and show the process of this distribution. 
