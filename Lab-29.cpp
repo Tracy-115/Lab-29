@@ -16,8 +16,7 @@ int main() {
     //key = name
     // value = progress
     map<string, array<list<string>, 3>> employees;
-    // Open an external file to read initial data about climate zones and populate the map
-        // If file does not open, print an error and exit
+        // If file does not open, print an error and exit, and openning an external file
     ifstream infile("tasks.txt");
     if(!infile) {
         cout << "Could not open file!" << endl;
@@ -31,7 +30,7 @@ int main() {
         //add task to list
         int comma = line.find(',');
         if (comma != -1){
-            string name = line.substr(0, comma));
+            string name = line.substr(0, comma);
             string task = line.substr(comma +1);
             employees [name][0].push_back(task);
         }
