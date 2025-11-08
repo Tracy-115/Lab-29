@@ -6,9 +6,9 @@
 #include <list>
 #include <string>
 using namespace std;
-// Define a function to simulate environmental changes over time
+// Define a function to simulate employee task progress over time
     // Parameters: employees, time period
-void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time;
+void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time);
 
 // Define main function
 int main() {
@@ -24,8 +24,7 @@ int main() {
         return 1;
     }
     // Read data from file and populate map
-        // For each line, extract climate zone and species data
-        // Insert species into the appropriate list in the array for their climate zone
+    // while also taking out data
     string line;
     while (getline(infile, line)){
         //take in data like employee and task
@@ -42,15 +41,15 @@ int main() {
 void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
     for (int t = 1; t <= Time ; ++t){
         cout << "Time: " << t << endl;
-        for (auto& employ : employee){
-            string name = emplo.first;
+        for (auto& employ : employees){
+            string name = employ.first;
             auto& lista = employ.second; // it will start from 0, and 0 being assigned task, 1, the emoloyee is working on it, and 2 is saying completed
             //in random, the employees will be moved around
             //in another time, the employee will be moved along the process of assigned to progress to complete
         cout << name << ": " << endl;
-        cout << "Task Assigned: " << list[0].size() << endl;
-        cout << "Task Assigned: " << list[0].size() << endl;
-        cout << "Task Assigned: " << list[0].size() << endl;
+        cout << "Task Assigned: " << lista[0].size() << endl;
+        cout << "Task Progress: " << lista[1].size() << endl;
+        cout << "Task Completed: " << lista[2].size() << endl;
         }
     }
 }
