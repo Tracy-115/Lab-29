@@ -48,4 +48,28 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
             //in random, the employees will be moved around
             //in another time, the employee will be moved along the process of assigned to progress to complete
         cout << name << ": " << endl;
-        cout << "Task Assigned: "
+        cout << "Task Assigned: " << list[0].size() << endl;
+        cout << "Task Assigned: " << list[0].size() << endl;
+        cout << "Task Assigned: " << list[0].size() << endl;
+        }
+    }
+}
+//for my dummys
+int example(){
+    map<string, array<list<string>, 3>> dummy;
+    dummy ["Lily"][0].push_back("Task 1: Mopping the floor");
+    dummy ["Lily"][1].push_back("Task 2: Opening Doors and Windows");
+    dummy ["Lily"][2].push_back("Task 3: Checking to see if there were any overnight orders");
+
+    cout <<"No.1 Employee Lily" << endl;
+    cout << "Task Assigned: " << dummy ["Lily"][0].front() << endl;
+    cout << "Task Assigned: " << dummy ["Lily"][1].front() << endl;
+    cout << "Task Assigned: " << dummy ["Lily"][2].front() << endl;
+    return 0;
+}
+
+
+
+
+
+
