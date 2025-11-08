@@ -29,6 +29,12 @@ int main() {
     while (getline(infile, line)){
         //take in data like employee and task
         //add task to list
+        int comma = line.find(',');
+        if (comma != -1){
+            string name = line.substr(0, comma));
+            string task = line.substr(comma +1);
+            employees [name][0].push_back(task);
+        }
     }
     infile.close();
     // Close the file
