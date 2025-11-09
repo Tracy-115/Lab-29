@@ -9,6 +9,8 @@
 #include <array>
 #include <list>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 // Define a function to simulate employee task progress over time
     // Parameters: employees, time period
@@ -16,6 +18,7 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time);
 
 // Define main function
 int main() {
+    srand(time(0))
     // Initialize a map to employee 
     //key = name
     // value = progress
@@ -49,7 +52,7 @@ int main() {
 }
 void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
     for (int t = 1; t <= Time ; ++t){
-        cout << "Time: " << t << endl;
+        cout << "\nTime: " << t << endl;
         for (auto& employ : employees){
             string name = employ.first;
             auto& lista = employ.second; // it will start from 0, and 0 being assigned task, 1, the emoloyee is working on it, and 2 is saying completed
@@ -57,7 +60,15 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
             //in another time, the employee will be moved along the process of assigned to progress to complete
             if(!lista[0].empty() && rand()%2){
                 lista[1].push_back(lista[0].front());
-                lista[0].popfront();
+                lista[0].pop_front();
+                string task = lista[0].front();
+                cout<< name << "\nStarted Task: " << task << endl;
+            }
+            if(!lista[1].empty() && rand()%2){
+                lista[2].push_back(lista[1].front());
+                lista[1].pop_front();
+                string task = lista[1].front();
+                cout<< name << "\nCompletes Task: " << task << endl;
             }
             cout << name << ": " << endl;
             cout << "Task Assigned: " << lista[0].size() << endl;
