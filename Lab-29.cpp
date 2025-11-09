@@ -1,4 +1,8 @@
 // Include necessary headers for file handling, data structures, etc.
+//Kyawt Thinzar Min
+//lab-31
+//IDE: VS Code
+
 #include <iostream>
 #include <fstream>
 #include <map>
@@ -17,7 +21,7 @@ int main() {
     // value = progress
     map<string, array<list<string>, 3>> employees;
         // If file does not open, print an error and exit, and openning an external file
-    ifstream infile("tasks.txt");
+    ifstream infile("tasks.txt");//this is to open the file, specifically, tasks.txt
     if(!infile) {
         cout << "Could not open file!" << endl;
         return 1;
@@ -28,7 +32,7 @@ int main() {
     while (getline(infile, line)){
         //take in data like employee and task
         //add task to list
-        int comma = line.find(',');
+        int comma = line.find(','); //so that we don't count in the commas when we are tkaing in data from the file
         if (comma != -1){
             string name = line.substr(0, comma);
             string task = line.substr(comma +1);
@@ -58,19 +62,7 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
         }
     }
 }
-//for my dummys
-int example(){
-    map<string, array<list<string>, 3>> dummy;
-    dummy ["Lily"][0].push_back("Task 1: Mopping the floor");
-    dummy ["Lily"][1].push_back("Task 2: Opening Doors and Windows");
-    dummy ["Lily"][2].push_back("Task 3: Checking to see if there were any overnight orders");
 
-    cout <<"No.1 Employee Lily" << endl;
-    cout << "Task Assigned: " << dummy ["Lily"][0].front() << endl;
-    cout << "Task Assigned: " << dummy ["Lily"][1].front() << endl;
-    cout << "Task Assigned: " << dummy ["Lily"][2].front() << endl;
-    return 0;
-}
 
 
 
