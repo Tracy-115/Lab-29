@@ -1,0 +1,100 @@
+Alice,Take table orders
+Alice,Refill drinks
+Alice,Print customer receipts
+Alice,Roll silverware
+Alice,Wipe down tables
+Bob,Cook pasta dishes
+Bob,Prep vegetables
+Bob,Season grilled meats
+Bob,Prepare sauces
+Bob,Check ingredient stock
+Carla,Seat customers
+Carla,Update waitlist
+Carla,Answer phone calls
+Carla,Clean host stand
+Carla,Prepare menus
+Diego,Wash dishes
+Diego,Load dishwasher
+Diego,Scrub pots and pans
+Diego,Organize clean plates
+Diego,Sanitize dish area
+Ella,Prepare salads
+Ella,Slice fruits
+Ella,Assemble appetizers
+Ella,Restock pantry station
+Ella,Label food containers
+Frank,Grill steaks
+Frank,Cook burgers
+Frank,Monitor grill temperatures
+Frank,Restock grill station
+Frank,Sharpen kitchen knives
+Grace,Deliver orders to tables
+Grace,Check on guest satisfaction
+Grace,Reset tables after guests leave
+Grace,Run food from kitchen
+Grace,Handle to-go orders
+Henry,Make specialty drinks
+Henry,Restock bar supplies
+Henry,Wash bar glasses
+Henry,Prepare drink garnishes
+Henry,Update drink inventory
+Isla,Clean dining room
+Isla,Vacuum entrance
+Isla,Disinfect high-touch surfaces
+Isla,Take out trash
+Isla,Refill condiment bottles
+Jack,Prepare desserts
+Jack,Decorate cakes
+Jack,Inspect dessert display case
+Jack,Restock dessert ingredients
+Jack,Update dessert menu board
+Kelly,Count cash drawer
+Kelly,Process customer payments
+Kelly,Check employee schedules
+Kelly,Print end-of-day reports
+Kelly,Submit supply orders
+Leo,Prepare pizza dough
+Leo,Top pizzas
+Leo,Clean pizza oven
+Leo,Slice cooked pizzas
+Leo,Organize pizza topping station
+Mia,Take drive-thru orders
+Mia,Prepare drive-thru bags
+Mia,Check accuracy of orders
+Mia,Restock napkins and sauces
+Mia,Clean drive-thru window area
+Nate,Handle food deliveries
+Nate,Check temperature of incoming meat
+Nate,Store deliveries in walk-in
+Nate,Rotate stock (FIFO)
+Nate,Sign delivery receipts
+Olivia,Brew fresh coffee
+Olivia,Clean coffee machine
+Olivia,Restock coffee beans
+Olivia,Prepare iced drinks
+Olivia,Organize drink fridge
+Pablo,Prepare seafood dishes
+Pablo,Check seafood freshness
+Pablo,De-shell shrimp
+Pablo,Marinate fish
+Pablo,Clean seafood station
+Quinn,Prep breakfast items
+Quinn,Cook eggs
+Quinn,Toast bread
+Quinn,Restock breakfast bar
+Quinn,Clean griddle
+Rosa,Manage reservations
+Rosa,Help host during rush
+Rosa,Prepare party seating charts
+Rosa,Confirm large party bookings
+Rosa,Check menu printouts
+Sam,Deep clean kitchen floors
+Sam,Sanitize equipment
+Sam,Check cleaning supply levels
+Sam,Organize storage closet
+Sam,Replace mop heads
+Tina,Plate finished dishes
+Tina,Wipe plate edges
+Tina,Check dish presentation
+Tina,Garnish dishes
+Tina,Assist line cooks
