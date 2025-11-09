@@ -1,0 +1,25 @@
+Hello Professor, I did this 2 days ago, and for some reason, everything I wrote disappeared and maybe because I didn't save it, but I can assure you that I did it before the deadline. 
+
+The function I will be testing on is workForTheDay().
+In my testing, I will have a file with multiple employees and multiple assignments. 
+Initially, they will be assigned to one task each, and then, after each time, it will move along assigned -> progress -> completed
+My driver program is going to use my dummy program from lab 29. 
+
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <array>
+#include <list>
+#include <string>
+using namespace std;
+void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time);
+int main(){
+    map<string, array<list<string>, 3>> dummy;
+    dummy ["Lily"][0].push_back("Task 1: Mopping the floor");
+    dummy ["Lily"][1].push_back("Task 2: Opening Doors and Windows");
+    dummy ["Lily"][2].push_back("Task 3: Checking to see if there were any overnight orders");
+
+    workForTheDay(dummy, 5);
+    return 0;
+}
+
