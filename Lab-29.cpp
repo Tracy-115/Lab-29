@@ -18,7 +18,7 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time);
 
 // Define main function
 int main() {
-    srand(time(0))
+    srand(time(0));
     // Initialize a map to employee 
     //key = name
     // value = progress
@@ -59,16 +59,22 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
             //in random, the employees will be moved around
             //in another time, the employee will be moved along the process of assigned to progress to complete
             if(!lista[0].empty() && rand()%2){
-                lista[1].push_back(lista[0].front());
-                lista[0].pop_front();
                 string task = lista[0].front();
+                lista[1].push_back(task);
+                lista[0].pop_front();
                 cout<< name << "\nStarted Task: " << task << endl;
             }
+            else {
+                cout << "Not moved" << endl;
+            }
             if(!lista[1].empty() && rand()%2){
-                lista[2].push_back(lista[1].front());
-                lista[1].pop_front();
                 string task = lista[1].front();
+                lista[2].push_back(task);
+                lista[1].pop_front();
                 cout<< name << "\nCompletes Task: " << task << endl;
+            }
+            else {
+                cout << "Not moved" << endl;
             }
             cout << name << ": " << endl;
             cout << "Task Assigned: " << lista[0].size() << endl;
