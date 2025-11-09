@@ -55,10 +55,14 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
             auto& lista = employ.second; // it will start from 0, and 0 being assigned task, 1, the emoloyee is working on it, and 2 is saying completed
             //in random, the employees will be moved around
             //in another time, the employee will be moved along the process of assigned to progress to complete
-        cout << name << ": " << endl;
-        cout << "Task Assigned: " << lista[0].size() << endl;
-        cout << "Task Progress: " << lista[1].size() << endl;
-        cout << "Task Completed: " << lista[2].size() << endl;
+            if(!lista[0].empty() && rand()%2){
+                lista[1].push_back(lista[0].front());
+                lista[0].popfront();
+            }
+            cout << name << ": " << endl;
+            cout << "Task Assigned: " << lista[0].size() << endl;
+            cout << "Task Progress: " << lista[1].size() << endl;
+            cout << "Task Completed: " << lista[2].size() << endl;
         }
     }
 }
