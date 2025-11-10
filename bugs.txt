@@ -1,0 +1,25 @@
+bug 1
+I had an extra dummy code at the bottom
+Fix: I removed the whole thing
+
+bug 2
+I couldn't open the tasks.txt, and when I was able to opne it
+fix: there was no tasks.txt, because I might have not saved it so I had to create a new one 
+
+bug 3
+After tasks were given, it didn't move to procesing
+fix: I added more codes to my function, so that if in one time, the person is given the task, the next time they will be moved to processing
+
+bug 3
+After the tasks were being processed, they didn't move to complete
+fix: I added a similar code to my function again. (Similar with the processing part) It have a random in it so that it immitates real life tasks. 
+
+bug 4
+the rand did not work 
+fix: added #include <cstdlib> and #include <ctime>
+
+bug 5
+I called workForTheDay with (employees, 20, 20) which did not work 
+Fix: changed it to workForTheDay(employees, 20(or an integer)) because this function only allowed one integer
+
+
