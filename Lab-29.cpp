@@ -51,7 +51,8 @@ int main() {
     return 0;
 }
 void workForTheDay(map<string, array<list<string>, 3&>> employees, int Time){
-    for (int t = 1; t <= Time ; ++t){
+    int t =1;
+    while (t!= Time) {
         if (t == 1){
              cout << "la la la" << endl;
         }
@@ -78,6 +79,7 @@ void workForTheDay(map<string, array<list<string>, 3&>> employees, int Time){
             cout << "Task Progress: " << lista[1].size() << endl;
             cout << "Task Completed: " << lista[2].size() << endl;
         }
+        t=t+1;
     }
 }
 
