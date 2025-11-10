@@ -22,4 +22,26 @@ bug 5
 I called workForTheDay with (employees, 20, 20) which did not work 
 Fix: changed it to workForTheDay(employees, 20(or an integer)) because this function only allowed one integer
 
+bug 6
+My code didn't start from time 1
+tried fixing: i tried different loops, while, and for, and also checked the loops to see if I missed out on anything
 
+bug 7
+i didn't get the 50% chance like I wanted
+fixed: the code had rand()%3 and I changed it to rand()%2
+
+bug 8 
+rand generator had the same numbers each time
+fixed: i forgot to add srand(time(0))
+
+bug 9
+there was no code to fix the if statements
+fix: I added else if and else statements so that if one code did not went through, it can still have other statements to go through and finally printing the else statements
+
+bug 10
+there were many times I had a typo with lista 
+fix: I went through the code and changed every list to lista
+
+bug 11
+I also wanted to print the task the employees were working on, but after the first loop, the program stopped printing
+FixL: I realized that because I added the string task after popping the value, it was not carried onto the task, thus I moved string task to the start of the loop so that the value lasts until the printing part
