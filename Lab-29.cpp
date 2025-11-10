@@ -46,12 +46,13 @@ int main() {
     // Close the file
     //going to start the output
     cout << "Starting to Assign" << endl; //this is my starting point for output
-    workForTheDay(employees, 25);
+    workForTheDay(employees, 20);
     cout << "Completed" << endl;
     return 0;
 }
 void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
     for (int t = 1; t <= Time ; ++t){
+        if (t == 1) cout << "la la la" << endl;
         cout << "\nTime: " << t << endl;
         for (auto& employ : employees){
             string name = employ.first;
@@ -64,10 +65,7 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
                 lista[0].pop_front();
                 cout<< name << "\nStarted Task: " << task << endl;
             }
-            else {
-                cout << "Not moved" << endl;
-            }
-            if(!lista[1].empty() && rand()%2){
+            else if(!lista[1].empty() && rand()%2){
                 string task = lista[1].front();
                 lista[2].push_back(task);
                 lista[1].pop_front();
