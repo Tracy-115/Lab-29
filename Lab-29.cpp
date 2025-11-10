@@ -39,7 +39,7 @@ int main() {
         if (comma != -1){
             string name = line.substr(0, comma);
             string task = line.substr(comma +1);
-            employees [name][0].push_back(task);
+            employees[name][0].push_back(task);
         }
     }
     infile.close();
@@ -50,9 +50,11 @@ int main() {
     cout << "Completed" << endl;
     return 0;
 }
-void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
+void workForTheDay(map<string, array<list<string>, 3&>> employees, int Time){
     for (int t = 1; t <= Time ; ++t){
-        if (t == 1) cout << "la la la" << endl;
+        if (t == 1){
+             cout << "la la la" << endl;
+        }
         cout << "\nTime: " << t << endl;
         for (auto& employ : employees){
             string name = employ.first;
@@ -70,9 +72,6 @@ void workForTheDay(map<string, array<list<string>, 3>>& employees, int Time){
                 lista[2].push_back(task);
                 lista[1].pop_front();
                 cout<< name << "\nCompletes Task: " << task << endl;
-            }
-            else {
-                cout << "Not moved" << endl;
             }
             cout << name << ": " << endl;
             cout << "Task Assigned: " << lista[0].size() << endl;
